@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Positioning</title>
+    <style>
+	.item {
+		padding: 50px;
+	}
+	
+	.background-green {
+		background-color: gray;
+	}
+	
+	.background-blue {
+		background-color: yellow;}
+		
+		.background-red {
+		background-color: rebeccapurple;
+		}
+		
+	.relative-element {
+		position: relative;
+	}
+	
+	.absolute-element {
+		position: absolute;
+		top: 50px;
+		left: 200px;
+	}
+	
+	.relative-element .absolute-element {
+	left: 20px;
+	}
+
+    </style>
+    <script>
+
+
+
+    </script>  
+  </head>
+  <body>
+  
+  <div class="item">
+I am a static element</div>
+
+
+
+<div class="item relative-element background-green">
+I am an relative element</div>
+
+<div class="item absolute-element background-blue">
+I am an absolute element</div>
+
+
+
+<div class="item relative-element relative-element--container background-red">
+I am an relative element container
+<div class="item absolute-element background-blue">
+I am an absolute element inside a relative element</div>
+
+</div>
+
+
+  </body>
+</html>
